@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.or.iei.member.model.dao.MemberDao">
+    <!-- SQL 문과 매핑된 메서드들이 여기에 포함됩니다 -->
+</mapper>
