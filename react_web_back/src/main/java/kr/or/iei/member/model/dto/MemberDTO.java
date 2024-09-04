@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-@Alias(value="mebmer")
+@Alias(value="member")
 @Schema(description = "회원객체")
 public class MemberDTO {
 	@Schema(description = "회원아이디", type = "String")

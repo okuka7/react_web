@@ -1,5 +1,5 @@
 {
-  "name": "react_web",
+  "name": "react_web_front",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,6 +11,8 @@
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.1",
     "react-scripts": "5.0.1",
+    "recoil": "^0.7.7",
+    "sweetalert2": "^11.12.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

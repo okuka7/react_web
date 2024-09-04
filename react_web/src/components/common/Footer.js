@@ -21,10 +21,11 @@ const Footer = () => {
             <Link to="#">인스타그램</Link>
           </li>
         </ul>
-        <p>made by kinjungeun</p>
-        <p>날래꺼지라우</p>
+        <p>Made by MoonJeongWon</p>
+        <p>무단복제 허용하지 않습니다.</p>
       </div>
     </footer>
   );
 };
+
 export default Footer;

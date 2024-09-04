@@ -4,4 +4,28 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="kr.or.iei.member.model.dao.MemberDao">
     <!-- SQL 문과 매핑된 메서드들이 여기에 포함됩니다 -->
+    <insert id="insertMember">
+    	insert into member_tbl values(#{memberId},#{memberPw},#{memberName},#{memberPhone},2)
+    </insert>
+    <select id="checkId" resultType="int">
+    	select count(*) from member_tbl where member_id=#{memberId}
+    </select>
+    <select id="selectOneMember" resultType="member">
+		select * from member_tbl where member_id=#{memberId}
+	</select>
+	
+	<update id="updateMember">
+		update member_tbl set
+			member_name=#{memberName},
+			member_phone=#{memberPhone}
+		where member_id=#{memberId}
+	</update>
+	
+	<update id="changePw">
+		update member_tbl set
+			member_pw=#{memberPw} where member_Id=#{memberId}
+	</update>
+	<delete id="deleteMember">
+		delete member_tbl where member_id=#{memberId}
+	</delete>
 </mapper>
